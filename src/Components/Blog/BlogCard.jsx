@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 function BlogCard({id, image, title, author, publishedDate, data}) {
 
   return (
-    <Link to={`blog/${id}`} state={data}>
+    <Link to={`/blog/${id}`} state={data}>
       <div className='h-full max-w-fit p-5 rounded-md flex flex-col space-y-4 group shadow-lg transition-all'>
         <div id="img-section">
-          <img className='w-full' src={image} alt="blog-img" />
+          <img className='w-full rounded-md min-h-36 object-cover' src={image} alt="blog-img" />
         </div>
         <div id="card-section" className='flex flex-col space-y-1'>
           <h2 id="card-heading" className='text-lg font-semibold group-hover:text-purple-700'>{title}</h2>

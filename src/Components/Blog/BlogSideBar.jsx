@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function BlogSideBar() {
   return (
-    <div className='ml-10'>
+    <div className='ml-10 max-w-56'>
       <h2 className='font-semibold text-2xl mb-5'>Latest Blogs</h2>
       <div>
         {blogsData.map((item) => (

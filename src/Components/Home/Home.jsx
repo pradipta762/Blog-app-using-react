@@ -8,7 +8,7 @@ function Home() {
     <div>
       <Banner 
         title={"Welcome to our Blog"}
-        description={"Start your blog today and join a community of writers and readers who are passionate about sharing theier stories and ideas. We offer Everything you need to get started from helful tips and tutorials."}
+        description={"Start your blog today and join a community of writers and readers who are passionate about sharing their   stories and ideas. We offer Everything you need to get started from helful tips and tutorials."}
         buttonText={"Learn More →" }
       />
       <div className="wrapper">

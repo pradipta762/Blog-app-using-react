@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import navItems from '../../utils/navItems'
 import { NavLink, Link } from 'react-router-dom'
 import { FaFacebook, FaTwitter } from 'react-icons/fa'
@@ -14,9 +14,9 @@ function Header() {
 
   return (
     <div>
-      <div id='nav-bar' className='bg-gray-950 flex justify-between items-center text-white p-6 h-24 w-full fixed top-0 left-0 text-xl font-medium'>
+      <div id='nav-bar' className='bg-gray-800 flex justify-between items-center text-white p-6 h-24 w-full fixed top-0 left-0 z-50 text-xl font-medium'>
         <div id='logo' className='font-bold'>
-          <Link to='/'>Blog <span className='text-orange-500'>app</span></Link>
+          <Link to='/'>Blog <span className='text-orange-500'>Stories</span></Link>
         </div>
         <div id='nav-links' className='hidden md:flex '>
           <ul className='flex space-x-10'>
@@ -52,7 +52,7 @@ function Header() {
        {/* Mobile Navigation  */}
       
       {showNav && (
-        <div id='mobile-navbar' className='bg-gray-950 flex flex-col fixed w-full'>
+        <div id='mobile-navbar' className='bg-gray-800 flex flex-col fixed w-full'>
           <div className='flex justify-between items-center text-white p-6 h-24 w-full text-xl font-medium'>
             <div id='logo' className='font-bold'>Blog <span className='text-orange-500'>app</span></div>
             <button onClick={() => setShowNav(false)}>
