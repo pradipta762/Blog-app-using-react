@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Banner from '../Banner/Banner'
 import BlogCardWrapper from '../Blog/BlogCardWrapper'
 import BlogSideBar from '../Blog/BlogSideBar'
+import BlogFilter from '../Blog/BlogFilter'
 
 function Home() {
+
+  const [selectedCatagory, setSelectedCatagory] = useState("All")
+
   return (
     <div>
       <Banner 
@@ -13,8 +17,11 @@ function Home() {
       />
       <div className="wrapper">
         <div className="content-wrapper">
+        <BlogFilter selectedCatagory={selectedCatagory} setSelectedCatagory={setSelectedCatagory}/>
           <div className='flex flex-col md:flex-row gap-5'>
-            <BlogCardWrapper />
+            <BlogCardWrapper
+                blogCategory={selectedCatagory}
+            />
             <BlogSideBar />
           </div>
         </div>

@@ -2,11 +2,11 @@ import React from 'react'
 import { IoPersonSharp } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 
-function BlogCard({id, image, title, author, publishedDate, data}) {
+function BlogCard({id, image, title, author, publishedDate, data, category}) {
 
   return (
     <Link to={`/blog/${id}`} state={data}>
-      <div className='h-full max-w-fit p-5 rounded-md flex flex-col space-y-4 group shadow-lg transition-all'>
+      <div className='min-h-[400px] max-w-fit p-5 rounded-md flex flex-col space-y-4 group shadow-lg transition-all'>
         <div id="img-section">
           <img className='w-full rounded-md min-h-36 object-cover' src={image} alt="blog-img" />
         </div>
