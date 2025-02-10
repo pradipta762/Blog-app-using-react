@@ -2,7 +2,7 @@ import React from 'react'
 
 function Login({loginDialog, setLoginDialog}) {
   return (
-    <div className='bg-purple-900 rounded-md text-gray-100 max-w-[480px] w-full px-10 py-16 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+    <div className='z-[99] bg-purple-900 rounded-md text-gray-100 max-w-[480px] w-full px-10 py-16 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
       <div className='flex flex-col text-center'>
         <h3 className='mb-5 font-semibold text-3xl'>Please Login Here</h3>
         <form className='flex flex-col space-y-5' onSubmit={(e) => {

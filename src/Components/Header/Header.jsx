@@ -52,9 +52,9 @@ function Header() {
        {/* Mobile Navigation  */}
       
       {showNav && (
-        <div id='mobile-navbar' className='bg-gray-800 flex flex-col fixed w-full'>
-          <div className='flex justify-between items-center text-white p-6 h-24 w-full text-xl font-medium'>
-            <div id='logo' className='font-bold'>Blog <span className='text-orange-500'>app</span></div>
+        <div id='mobile-navbar' className='flex flex-col w-full fixed top-0 left-0 z-50 '>
+          <div className='bg-gray-800 flex justify-between items-center text-white p-6 h-24 w-full text-xl font-medium'>
+            <div id='logo' className='font-bold'>Blog <span className='text-orange-500'>Stories</span></div>
             <button onClick={() => setShowNav(false)}>
               <RxCross2 />
             </button>
